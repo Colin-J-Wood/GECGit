@@ -24,7 +24,7 @@
     <ProjectGuid>{9924c3d3-e188-490f-a83d-96d766ba1af5}</ProjectGuid>
     <RootNamespace>Week2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Project2_DataTypeSize</ProjectName>
+    <ProjectName>Week2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Week2.cpp" />
+    <ClCompile Include="..\Week2_DefiningVariables\Project3_DefiningVariables.cpp" />
+    <ClCompile Include="..\Week2_IncrementDecrement\Project5_IncrementDecrement.cpp" />
+    <ClCompile Include="..\Week2_UserDefinedVars\Project4_UserDefinedVariables.cpp" />
+    <ClCompile Include="Project2.cpp" />
+    <ClCompile Include="Project6_Area.cpp" />
+    <ClCompile Include="Project7_Converting.cpp" />
+    <ClCompile Include="Project8_Pi.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
