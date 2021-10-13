@@ -9,7 +9,7 @@ int main()
     typedef int health;
     enum Weapons
     {
-        SWORD,
+        SWORD = 1,
         DAGGER,
         MACE,
         TWIN_SWORDS,
