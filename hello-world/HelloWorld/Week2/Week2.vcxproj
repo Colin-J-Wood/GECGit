@@ -140,9 +140,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Week2_DefiningVariables\Project3_DefiningVariables.cpp" />
-    <ClCompile Include="..\Week2_IncrementDecrement\Project5_IncrementDecrement.cpp" />
-    <ClCompile Include="..\Week2_UserDefinedVars\Project4_UserDefinedVariables.cpp" />
+    <ClCompile Include="Project3_DefiningVariables.cpp" />
+    <ClCompile Include="Project5_IncrementDecrement.cpp" />
+    <ClCompile Include="Project4_UserDefinedVariables.cpp" />
     <ClCompile Include="Project2.cpp" />
     <ClCompile Include="Project6_Area.cpp" />
     <ClCompile Include="Project7_Converting.cpp" />

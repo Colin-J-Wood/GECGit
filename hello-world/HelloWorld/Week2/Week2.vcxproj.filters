@@ -18,13 +18,13 @@
     <ClCompile Include="Project2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Week2_DefiningVariables\Project3_DefiningVariables.cpp">
+    <ClCompile Include="Project3_DefiningVariables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Week2_UserDefinedVars\Project4_UserDefinedVariables.cpp">
+    <ClCompile Include="Project4_UserDefinedVariables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Week2_IncrementDecrement\Project5_IncrementDecrement.cpp">
+    <ClCompile Include="Project5_IncrementDecrement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Project6_Area.cpp">
