@@ -21,5 +21,8 @@
     <ClCompile Include="Project10_ShareOfHaribo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project11_DoomDifficultyMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
