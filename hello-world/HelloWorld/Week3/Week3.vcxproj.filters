@@ -24,5 +24,8 @@
     <ClCompile Include="Project11_DoomDifficultyMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project12_IfThisThenThat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
