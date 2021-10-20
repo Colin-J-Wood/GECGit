@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Project9_ShareOfSavings.cpp" />
     <ClCompile Include="Project10_ShareOfHaribo.cpp" />
+    <ClCompile Include="Project11_DoomDifficultyMenu.cpp" />
+    <ClCompile Include="Project12_IfThisThenThat.cpp" />
+    <ClCompile Include="Project13_Discount.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
