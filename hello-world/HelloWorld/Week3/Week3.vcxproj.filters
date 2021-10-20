@@ -27,5 +27,8 @@
     <ClCompile Include="Project12_IfThisThenThat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project13_Discount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
