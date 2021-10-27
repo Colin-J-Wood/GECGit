@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Project14_10Numbers.cpp" />
     <ClCompile Include="Project15_StarryOutput.cpp" />
+    <ClCompile Include="Project16_EarlyExit.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

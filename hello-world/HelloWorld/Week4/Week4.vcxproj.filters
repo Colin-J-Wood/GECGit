@@ -21,5 +21,8 @@
     <ClCompile Include="Project15_StarryOutput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project16_EarlyExit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
