@@ -18,5 +18,8 @@
     <ClCompile Include="Project21_SmallestElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project22_OrderedOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
