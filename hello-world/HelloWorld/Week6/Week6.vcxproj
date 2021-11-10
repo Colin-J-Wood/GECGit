@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Project21_SmallestElement.cpp" />
     <ClCompile Include="Project22_OrderedOutput.cpp" />
+    <ClCompile Include="Project23_Inventory.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
