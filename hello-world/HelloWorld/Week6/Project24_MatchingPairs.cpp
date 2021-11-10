@@ -18,6 +18,7 @@ void test_match();
 int main()
 {	
 	shuffle_cards();
+	print_table();
 
 	while (score < 5) //win condition, there are five pairs to find.
 	{
