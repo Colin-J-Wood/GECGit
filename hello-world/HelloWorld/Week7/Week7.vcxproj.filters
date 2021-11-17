@@ -27,5 +27,8 @@
     <ClCompile Include="Project28_StringsAndVectors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project29_RockPaperScissors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

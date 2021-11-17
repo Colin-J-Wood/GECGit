@@ -143,6 +143,7 @@
     <ClCompile Include="Project26_ReplacingCharacters.cpp" />
     <ClCompile Include="Project27_StringManipulation.cpp" />
     <ClCompile Include="Project28_StringsAndVectors.cpp" />
+    <ClCompile Include="Project29_RockPaperScissors.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
