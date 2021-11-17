@@ -7,7 +7,8 @@ using namespace std;
 
 int main()
 {
-	int playerWins, computerWins;
+	int playerWins = 0;
+	int computerWins = 0;
 	string playerChoice, computerChoice;
 	vector<string> valids;
 
@@ -23,18 +24,65 @@ int main()
 		cout << "Input your choice: ";
 		getline(cin, playerChoice);
 
-		if ((playerChoice != valids[0]) && (playerChoice != valids[0]) && (playerChoice != valids[0]))
+		if ((playerChoice != valids[0]) && (playerChoice != valids[1]) && (playerChoice != valids[2]))
 		{
 			cout << "Not a valid choice." << endl;
 		}
 		else
 		{
-			srand(time(nullptr));
-			computerChoice = valids[rand() % 2];
+			srand(unsigned int (time(nullptr)));
+			computerChoice = valids[int(rand() % 2)];
+
+			cout << "Computer chose: " << computerChoice << endl;
 
 			//conditions
+			if (playerChoice == computerChoice)
+			{
+				cout << "It was a tie!  No score given" << endl;
+			}
+			else
+			{
+				if (playerChoice == "Rock")
+				{
+					if (computerChoice == "Paper")
+					{
+						cout << "Computer beats the player!  Computer scores 1 point." << endl;
+						cout << "Computer now has " << ++computerWins << " wins" << endl;
+					}
+					else //scissors
+					{
+						cout << "Player beats the computer!  Player scores 1 point." << endl;
+						cout << "Player now has " << ++playerWins << " wins" << endl;
+					}
+				}
+				if (playerChoice == "Paper")
+				{
+					if (computerChoice == "Scissors")
+					{
+						cout << "Computer beats the player!  Computer scores 1 point." << endl;
+						cout << "Computer now has " << ++computerWins << " wins" << endl;
+					}
+					else //scissors
+					{
+						cout << "Player beats the computer!  Player scores 1 point." << endl;
+						cout << "Player now has " << ++playerWins << " wins" << endl;
+					}
+				}
+				if (playerChoice == "Scissors")
+				{
+					if (computerChoice == "Rock")
+					{
+						cout << "Computer beats the player!  Computer scores 1 point." << endl;
+						cout << "Computer now has " << ++computerWins << " wins" << endl;
+					}
+					else //scissors
+					{
+						cout << "Player beats the computer!  Player scores 1 point." << endl;
+						cout << "Player now has " << ++playerWins << " wins" << endl;
+					}
+				}
+			}
 		}
-
 	}
 
 	if (playerWins == 3)
