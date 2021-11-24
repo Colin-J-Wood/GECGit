@@ -24,5 +24,8 @@
     <ClCompile Include="Project32_BrokenBMI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project33_Structs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
