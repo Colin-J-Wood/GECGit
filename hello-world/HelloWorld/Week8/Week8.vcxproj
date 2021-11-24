@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Project30_BrokenCode.cpp" />
     <ClCompile Include="Project31_UnexpectedCode.cpp" />
+    <ClCompile Include="Project32_BrokenBMI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

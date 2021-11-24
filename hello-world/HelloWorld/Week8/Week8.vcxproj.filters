@@ -21,5 +21,8 @@
     <ClCompile Include="Project31_UnexpectedCode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project32_BrokenBMI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
