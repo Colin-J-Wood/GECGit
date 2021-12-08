@@ -57,6 +57,7 @@ int main()
 		}
 
 		cin.clear();
+		cin.ignore();
 	}
 
 	cout << "Goodbye!" << endl;
@@ -136,7 +137,6 @@ void handleScore(string fileName, bool inputMode)
 
 		cout << "Input a score: ";
 		cin >> nextScore.scoreValue;
-		cin.ignore();
 
 		file.close();
 		file.open(fileName, fstream::in | fstream::out | fstream::trunc);
