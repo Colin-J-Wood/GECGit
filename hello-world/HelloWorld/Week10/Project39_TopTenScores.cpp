@@ -134,6 +134,8 @@ void handleScore(string fileName, bool inputMode)
 
 		file.clear();
 
+		//need to add code here that inserts the score into the vector.
+
 		for (score i : scoreList)
 		{
 			file << i.name << endl;
