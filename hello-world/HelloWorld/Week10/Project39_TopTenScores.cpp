@@ -19,9 +19,7 @@ struct score
 
 int main()
 {
-	//create the file if it hasn't already.
-	ofstream newFile("scores.txt");
-	newFile.close();
+	ofstream { fileName_global };
 
 	bool cont = true;
 
@@ -40,10 +38,12 @@ int main()
 		switch (choice)
 		{
 			case 1:
+				//input mode is true, ask for a new high score, write it, and print the new score table.
 				handleScore(fileName_global, true);
 
 				break;
 			case 2:
+				//input mode is false, just load and print the scores.
 				handleScore(fileName_global, false);
 
 				break;
@@ -71,7 +71,7 @@ void handleScore(string fileName, bool inputMode)
 	string textToCopy;
 	int index = 0;
 
-	file.open(fileName, ios::in | ios::out);
+	file.open(fileName, ios::in | ios::out | ios::app);
 
 	if (!file)
 	{
@@ -79,6 +79,7 @@ void handleScore(string fileName, bool inputMode)
 		return;
 	}
 
+	//loader for score table from file.
 	while (!file.eof())
 	{
 		index++;
@@ -132,7 +133,7 @@ void handleScore(string fileName, bool inputMode)
 		cin >> nextScore.scoreValue;
 		cin.ignore();
 
-		file.clear();
+		file.seekg(0);
 
 		//need to add code here that inserts the score into the vector.
 
