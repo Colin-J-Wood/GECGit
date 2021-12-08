@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <vector>
 #include <algorithm>
+#include <filesystem>
 
 using namespace std;
 
@@ -19,8 +20,6 @@ struct score
 
 int main()
 {
-	ofstream { fileName_global };
-
 	bool cont = true;
 
 	while (cont)
@@ -37,25 +36,27 @@ int main()
 
 		switch (choice)
 		{
-			case 1:
-				//input mode is true, ask for a new high score, write it, and print the new score table.
-				handleScore(fileName_global, true);
+		case 1:
+			//input mode is true, ask for a new high score, write it, and print the new score table.
+			handleScore(fileName_global, true);
 
-				break;
-			case 2:
-				//input mode is false, just load and print the scores.
-				handleScore(fileName_global, false);
+			break;
+		case 2:
+			//input mode is false, just load and print the scores.
+			handleScore(fileName_global, false);
 
-				break;
-			case 3:
-				cont = false;
+			break;
+		case 3:
+			cont = false;
 
-				break;
-			default:
-				cout << "Not a choice." << endl;
+			break;
+		default:
+			cout << "Not a choice." << endl;
 
-				break;
+			break;
 		}
+
+		cin.clear();
 	}
 
 	cout << "Goodbye!" << endl;
@@ -63,23 +64,28 @@ int main()
 	return 0;
 }
 
+bool compareScore(score i1, score i2)
+{
+	return (i1.scoreValue > i2.scoreValue);
+}
+
+
 void handleScore(string fileName, bool inputMode)
 {
 	fstream file;
+	file.open(fileName, fstream::in | fstream::out | fstream::app);
+
 	vector<score> scoreList;
 	score nextScore;
 	string textToCopy;
 	int index = 0;
 
-	file.open(fileName, ios::in | ios::out | ios::app);
-
-	if (!file)
+	if (!file.is_open())
 	{
 		cout << "Failure opening file." << endl;
 		return;
 	}
 
-	//loader for score table from file.
 	while (!file.eof())
 	{
 		index++;
@@ -113,7 +119,6 @@ void handleScore(string fileName, bool inputMode)
 			scoreList.push_back(nextScore);
 		}
 
-		//having difficulty getting this working too...
 		for (score i : scoreList)
 		{
 			file << i.name << endl;
@@ -133,9 +138,13 @@ void handleScore(string fileName, bool inputMode)
 		cin >> nextScore.scoreValue;
 		cin.ignore();
 
-		file.seekg(0);
+		file.close();
+		file.open(fileName, fstream::in | fstream::out | fstream::trunc);
 
-		//need to add code here that inserts the score into the vector.
+		scoreList.push_back(nextScore);
+		sort(scoreList.begin(), scoreList.end(), compareScore);
+
+		scoreList.pop_back();
 
 		for (score i : scoreList)
 		{
@@ -148,7 +157,7 @@ void handleScore(string fileName, bool inputMode)
 	{
 		setw(10);
 		cout << i.name;
-		cout << i.scoreValue << endl;
+		cout << " | " << i.scoreValue << endl;
 		setw(0);
 	}
 
