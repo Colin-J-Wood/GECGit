@@ -18,5 +18,8 @@
     <ClCompile Include="Project38_AccountHolding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Project39_TopTenScores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

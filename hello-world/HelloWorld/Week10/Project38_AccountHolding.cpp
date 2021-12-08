@@ -5,7 +5,7 @@
 using namespace std;
 
 void newDetails(string fileName);
-void gatherAndDisplay(string fileName, double minimumBalance, bool minBalanceMode);
+void gatherAndDisplay(string fileName, float minimumBalance, bool minBalanceMode);
 
 string fileName_global = "accounts.txt";
 
@@ -13,7 +13,7 @@ struct account
 {
     string name;
     int number = 0;
-    double balance = 0.0f;
+    float balance = 0.0f;
 };
 
 int main()
@@ -114,7 +114,7 @@ void newDetails(string fileName)
     file.close();
 }
 
-void gatherAndDisplay(string fileName, double minimumBalance, bool minBalanceMode)
+void gatherAndDisplay(string fileName, float minimumBalance, bool minBalanceMode)
 {
     ifstream file(fileName);
     int index = 0;
