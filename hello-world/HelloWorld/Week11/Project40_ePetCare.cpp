@@ -65,5 +65,7 @@ int main()
         }
     } 
 
+    delete (petPtr);
+
     return 0;
 }
