@@ -32,16 +32,20 @@ int main()
 void loadAllAccounts()
 {
     fstream file(global_fileName);
-    accounts.push_back(loadAccount());
-}
 
-BaseAccount loadAccount(int accountIndex)
-{
-    BaseAccount accountLoaded;
+    int accountIndex = 0;
+    BaseAccount newAccount;
 
+    if (!file.is_open())
+    {
+        cout << "Error, file did not open." << endl;
+        return;
+    }
 
+    while (!file.eof())
+    {
 
-    return accountLoaded;
+    }
 }
 
 bool saveAccount()
@@ -49,7 +53,7 @@ bool saveAccount()
 
 }
 
-bool removeAccount()
+bool removeAccount(int accountIndex)
 {
 
 }
